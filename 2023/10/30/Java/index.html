@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="kakia">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://kakia-kk.github.io/2023/10/30/java/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="类 包含的元素 类名：这是用来标识类的名称。按照Java的命名规范，类名应该以大写字母开头，如果类名由多个单词组成，那么每个单词的首字母都应该大写。 包声明（可选）：这是一个可选元素，用于指定类所在的包。如果没有指定，那么类就属于默认包。 导入语句（可选）：这也是一个可选元素，用于导入其他包中的类和接口。 类变量（可选）：这些是定义在类中、方法外的变量。根据它们的声明和初始化的位置，它们">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java">
+<meta property="og:url" content="https://kakia-kk.github.io/2023/10/30/Java/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="类 包含的元素 类名：这是用来标识类的名称。按照Java的命名规范，类名应该以大写字母开头，如果类名由多个单词组成，那么每个单词的首字母都应该大写。 包声明（可选）：这是一个可选元素，用于指定类所在的包。如果没有指定，那么类就属于默认包。 导入语句（可选）：这也是一个可选元素，用于导入其他包中的类和接口。 类变量（可选）：这些是定义在类中、方法外的变量。根据它们的声明和初始化的位置，它们">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-10-30T14:27:39.000Z">
+<meta property="article:modified_time" content="2023-10-30T14:29:55.477Z">
+<meta property="article:author" content="Kakia">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/redefine-favicon.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            Java -
+        
+        Kakia&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    window.config = {"hostname":"kakia-kk.github.io","root":"/","language":"en"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"simple","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Kakia's Blog","subtitle":{"text":["加油加油！"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.5.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="swup-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+    
+    <div class="navbar-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                Kakia&#39;s Blog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        HOME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer w-full absolute top-0 left-0 bg-background-color">
+        <ul class="drawer-navbar-list flex flex-col justify-start items-center">
+            
+                
+                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                HOME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            
+                <h1 class="article-title-regular">Java</h1>
+            
+            </div>
+            
+                    
+        
+        
+            <div class="article-header flex flex-row gap-2 items-center">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/redefine-avatar.svg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">kakia</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-10-30 22:27:39</span>
+        <span class="mobile">2023-10-30 22:27:39</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-10-30 22:29:55</span>
+            <span class="mobile">2023-10-30 22:29:55</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body">
+            <h1 id="类">类</h1>
+<h2 id="包含的元素">包含的元素</h2>
+<p><strong>类名</strong>：这是用来标识类的名称。按照Java的命名规范，类名应该以大写字母开头，如果类名由多个单词组成，那么每个单词的首字母都应该大写。
+<strong>包声明</strong>（可选）：这是一个可选元素，用于指定类所在的包。如果没有指定，那么类就属于默认包。
+<strong>导入语句</strong>（可选）：这也是一个可选元素，用于导入其他包中的类和接口。
+类变量（可选）：这些是定义在类中、方法外的变量。根据它们的声明和初始化的位置，它们可以被分为实例变量、类变量（静态变量）和常量。
+<strong>构造函数</strong>（可选）：用于初始化新创建的对象。构造函数的名称必须与类名相同。
+<strong>方法</strong>（可选）：方法是执行操作的函数。一个类可以包含多个方法。
+<strong>内部类</strong>（可选）：Java支持在一个类内部定义另一个类。这样的类被称为内部类。
+以下是一个简单的Java类示例： <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="comment">// 类变量</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 实例变量</span></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="comment">// 构造函数</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyClass</span><span class="params">(String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        count++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">printName</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Name: &quot;</span> + name);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 静态方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">getCount</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div> ## 异常类
+异常类是Java中用来处理程序在运行时可能出现的错误的一种机制。在Java中，所有的异常类型都是内置类java.lang.Throwable类的子类。Throwable类下有两个主要的子类：Exception和Error。
+*
+Exception：这是程序员可以处理的异常。它有两个主要的子类：IOException类和RuntimeException类。例如，当你试图打开一个不存在的文件时，会发生一个异常。
+*
+Error：这些是严重的问题，如系统崩溃，虚拟机错误等，程序员通常无法处理。例如，当Java虚拟机（JVM）内存溢出时，就会发生错误。
+异常处理是Java中的一个重要部分，它提供了一种结构化的方式来捕获和处理运行时错误。例如，你可以使用<strong>try/catch块</strong>来捕获可能出现的异常，并决定如何处理它们。此外，你还可以创建自定义的异常类来表示程序中可能出现的特定错误。总的来说，正确使用异常处理可以使你的程序更健壮，更易于调试和维护。</p>
+<h2 id="trycatch块">try/catch块</h2>
+<p>try/catch块是用于处理可能出现的异常的一种方法。它的工作原理如下： *
+try块：将可能出现异常的代码放在try块中。如果try块中的代码出现异常，程序会立即停止执行，并跳转到catch块中进行异常处理。
+*
+catch块：当try块中发生错误时，捕获该错误并对错误进行处理。只有当try抛出了错误，才会执行。你可以在catch块中使用例如e.printStackTrace()或者System.out.println(e.toString())等方法打印异常信息。
+* finally块：无论前面是否有异常都会执行。 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">int</span>[] myNumbers = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line">            System.out.println(myNumbers[<span class="number">10</span>]); <span class="comment">// 这将抛出一个数组越界异常</span></span><br><span class="line">        &#125; <span class="keyword">catch</span> (ArrayIndexOutOfBoundsException e) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;数组越界错误&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;无论是否发生异常，都会执行finally块&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></p>
+<h1 id="对象">对象</h1>
+<p>在Java中，对象是面向对象编程的基本单位，代表了现实生活中的实体。<strong>对象是类的实例</strong>，用于使用类的属性和方法。每个对象都有一个身份，一个行为和一个状态。
+在面向对象编程术语中，一个对象是Java类的成员。它也被称为类的实例。请注意，对象是在运行时创建的。简单来说，对象是一个现实世界的实体。例如，狗、汽车、笔、桌子等。
+每个对象都有以下两个特性：
+<strong>身份</strong>：对象身份是一个唯一的ID。ID的值对外部用户不可见。它由JVM内部使用，以唯一地标识每个对象。
+<strong>状态</strong>：对象的状态存储在变量（字段）中。
+<strong>行为</strong>：方法显示了对象的行为。
+例如，狗的状态包括颜色、饥饿感、性别、品种和年龄。狗的行为包括跑步、吠叫、吃东西、睡觉、摇尾巴、取物等。</p>
+<h1 id="接口-interface">接口 interface</h1>
+<p>接口中的成员变量只能是public static final类型的。
+一个类可以有多个接口
+接口是完全抽象的，它不能实例化，也不能包含任何非抽象方法。而抽象类（一种特殊的类）可以包含非抽象方法（即具有实现的方法）。
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">travel</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MammalInt</span> <span class="keyword">implements</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Mammal eats&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">travel</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Mammal travels&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div> ## 抽象类和接口有什么区别 抽象类用abstract修饰
+支持单继承使用extends
+抽象类中的方法无限制，只是抽象类中的抽象方法不能被private修饰；
+而接口中的方法默认的是public控制符。 能够写静态代码块和静态方法
+一个抽象类的例子: <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">move</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div> <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">AbstractClassExample</span> &#123;</span><br><span class="line">    <span class="comment">// 静态变量</span></span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span> i;</span><br><span class="line">    <span class="comment">// 静态代码块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Static block initialized.&quot;</span>);</span><br><span class="line">        i = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 抽象方法</span></span><br><span class="line">    <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">method</span><span class="params">()</span>;</span><br><span class="line">    <span class="comment">// 静态方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">staticMethod</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;This is a static method.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+AbstractClassExample是一个抽象类，它有一个静态代码块，一个静态方法staticMethod()，和一个抽象方法method()。<strong>静态代码块</strong>在类加载时执行，<strong>静态方法</strong>可以直接通过类名调用，而抽象方法需要在子类中实现。</p>
+<h1 id="继承-extends">继承 extends</h1>
+<p>一个类只能有一个父类(Java不支持多继承)</p>
+<h1 id="面向对象编程">面向对象编程</h1>
+<p>面向对象编程（Object Oriented
+Programming，OOP）是一种编程范式，它以类或对象作为组织代码的基本单元，并将<strong>封装、抽象、继承与多态</strong>四个特性作为代码的设计和实现的基石。在面向对象编程中，我们会创建一系列抽象的定义，这些定义代表了系统中存在的各类对象。
+面向对象编程与其他类型的编程有以下区别：
+&gt;封装：封装是将对象运行所需要的资源封装在程序对象中，并给外界公布接口的过程。这样，其他类使用时就很方便，不需要关心里边的功能是以哪种方式实现的，只要传入需要的参数就可以得到想要的结果。被封装的对象通常被称为抽象数据类型。封装的作用在于保护或者防止代码（数据）被我们无意中破坏。
+&gt;抽象：抽象是从众多的事物中抽取出共同的、本质性的特征，而舍弃其非本质的特征的过程。具体地说，抽象就是人们在实践的基础上，对于丰富的感性素材通过去粗取精、去伪存真、由此及彼、由表及里的加工制作，形成概念、判断、推理等思维形式，以反映事物的本质和规律的方法。
+&gt;继承：在面向对象编程中，继承是指子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为。
+&gt;多态：简单来说，所谓多态意指相同的消息给予不同的对象会引发不同的动作。多态也可定义为“一种将不同的特殊行为和单个泛化记号相关联的能力”。多态可分为变量多态与函数多态。</p>
+<p><strong>面向过程编程</strong>：这是一种以过程为中心的编程思想，分析出解决问题所需要的步骤，然后用函数把这些步骤一步一步实现，使用的时候一个一个依次调用就可以了。在面向过程编程中，数据和对数据的操作是分离的。
+<strong>面向服务架构</strong>：将软件设计成一组可互操作的服务的一套原则或方法论。通常在考虑系统架构时才会触及SOA4。
+<strong>基于组件开发</strong>：这是一种软件工程实践，设计时通常要求组件之间高内聚，松耦合。其接口可能是OO的，调用方式可能是以Service的方式。
+总的来说，面向对象编程更适合应对大规模复杂程序的开发，能够让我们在应对复杂程序开发时的思路更加清晰。同时，面向对象编程提供了一种模块化的代码组织方式。此外，面向对象编程风格的代码易复用、易扩展和易维护。</p>
+<h1 id="关键字">关键字</h1>
+<h2 id="import">import</h2>
+<p>import是一个关键字，用于引入其他包中的类或接口。如果你想在代码中使用其他包中的类或接口，你需要使用import关键字来引入这些类或接口。
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br></pre></td></tr></table></figure></div> ## package
+ackage是一个关键字，用于定义包。包是一种组织类和接口的方式，它们将一组相关的类和接口组织在一起，以便更好地组织和管理代码.</p>
+<h1 id="程序异常抛出">程序异常抛出</h1>
+<h1 id="string">String</h1>
+<p>Java中的字符串不是字符数组,一个字符串是一个对象
+字符串的不变性是Java虚拟机的基本原理之一(不可变对象通常有利于保证软件的可靠性)
+## StringBuilder 改变字符串中的字符 ## BufferedReader ## substring()方法
+String类的方法 两种重载方法,提供开始索引或者开始和结束索引 分解字符串
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SubStringDemo</span> &#123;</span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] av)</span> &#123;</span><br><span class="line"> <span class="type">String</span> <span class="variable">a</span> <span class="operator">=</span> <span class="string">&quot;Java is great.&quot;</span>;</span><br><span class="line"> System.out.println(a);</span><br><span class="line"> <span class="type">String</span> <span class="variable">b</span> <span class="operator">=</span> a.substring(<span class="number">5</span>); <span class="comment">// b is the String &quot;is great.&quot;</span></span><br><span class="line"> System.out.println(b);</span><br><span class="line"> <span class="type">String</span> <span class="variable">c</span> <span class="operator">=</span> a.substring(<span class="number">5</span>,<span class="number">7</span>);<span class="comment">// c is the String &quot;is&quot;</span></span><br><span class="line"> System.out.println(c);</span><br><span class="line"> <span class="type">String</span> <span class="variable">d</span> <span class="operator">=</span> a.substring(<span class="number">5</span>,a.length());<span class="comment">// d is &quot;is great.&quot;</span></span><br><span class="line"> System.out.println(d);</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div> ## StringTokenizer类
+StringTokenizer是Java的一个类。它属于java.util包，可以让应用程序将字符串分解为标记。这个类的标记化方法比StreamTokenizer类使用的方法简单得多。StringTokenizer的方法不区分标识符、数字和带引号的字符串，也不识别和跳过注释。
+然而，需要注意的是，尽管StringTokenizer类仍然保留在Java中以便兼容旧代码，但在新代码中使用它已经不被推荐了。建议寻求此功能的人使用String的split方法或者java.util.regex包。</p>
+<h2 id="stringbuilder类">StringBuilder类</h2>
+<p>append()方法 reverse()</p>
+<h2 id="trim方法">trim()方法</h2>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot; hello &quot;</span>;</span><br><span class="line">System.out.println(str.length()); <span class="comment">// 输出 7</span></span><br><span class="line">System.out.println(str.trim().length()); <span class="comment">// 输出 5</span></span><br></pre></td></tr></table></figure></div>
+<h1 id="数字">数字</h1>
+<h2 id="numberformat">NumberFormat</h2>
+<h2 id="java.lang.math类">java.lang.math类</h2>
+<h2 id="对象和数据的转换">对象和数据的转换</h2>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> Java</li>
+        <li><strong>Author:</strong> kakia</li>
+        <li><strong>Created at
+                :</strong> 2023-10-30 22:27:39</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2023-10-30 22:29:55
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://kakia-kk.github.io/2023/10/30/Java/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+            This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>.
+            
+
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                        rel="next"
+                        href="/2023/10/26/blog/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">个人博客搭建</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container">
+                <div class="comments-container pjax">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;Comments
+    </div>
+    
+
+        
+            
+ 
+    <div id="waline"></div>
+    <script type="module"  data-swup-reload-script>
+        import { init } from '/js/libs/waline.mjs';
+
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://example.example.com',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
+        }
+
+        if ('true') {
+            const loadWalineTimeout = setTimeout(() => {
+                loadWaline();
+                clearTimeout(loadWalineTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadWaline);
+        }
+        
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">Java</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B1%BB"><span class="nav-text">类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%85%E5%90%AB%E7%9A%84%E5%85%83%E7%B4%A0"><span class="nav-text">包含的元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#trycatch%E5%9D%97"><span class="nav-text">try&#x2F;catch块</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1"><span class="nav-text">对象</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3-interface"><span class="nav-text">接口 interface</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF-extends"><span class="nav-text">继承 extends</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B"><span class="nav-text">面向对象编程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-text">关键字</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#import"><span class="nav-text">import</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BA%8F%E5%BC%82%E5%B8%B8%E6%8A%9B%E5%87%BA"><span class="nav-text">程序异常抛出</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#string"><span class="nav-text">String</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#stringbuilder%E7%B1%BB"><span class="nav-text">StringBuilder类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#trim%E6%96%B9%E6%B3%95"><span class="nav-text">trim()方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E5%AD%97"><span class="nav-text">数字</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#numberformat"><span class="nav-text">NumberFormat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java.lang.math%E7%B1%BB"><span class="nav-text">java.lang.math类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%95%B0%E6%8D%AE%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="nav-text">对象和数据的转换</span></a></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">kakia</a>
+        </div>
+        
+            <script data-swup-reload-script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.5.0</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+    
+<script src="/js/libs/Swup.min.js"></script>
+
+<script src="/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/js/libs/anime.min.js"></script>
+
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+</body>
+</html>
