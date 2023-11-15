@@ -13,20 +13,20 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://kakia-kk.github.io/2023/11/02/面向对象编程/"/>
+    <link rel="canonical" href="https://kakia-kk.github.io/2023/11/15/cplus/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="面向对象编程  面向对象编程（Object Oriented Programming，OOP）是一种编程范式，它以类或对象作为组织代码的基本单元，并将封装、抽象、继承与多态四个特性作为代码的设计和实现的基石。在面向对象编程中，我们会创建一系列抽象的定义，这些定义代表了系统中存在的各类对象。 面向对象编程与其他类型的编程有以下区别： &gt;封装：封装是将对象运行所需要的资源封装在程序对象">
+        <meta name="description" content="类 简单理解 结构体的扩展 可以理解成拥有成员函数的结构体 class或者struct定义类 1234567891011121314class ClassName &amp;#123;  ...&amp;#125;;&#x2F;&#x2F; Example:class Object &amp;#123; public:  int weight;  int value;&amp;#125; e[array_length];const Obj">
 <meta property="og:type" content="article">
-<meta property="og:title" content="面向对象编程">
-<meta property="og:url" content="https://kakia-kk.github.io/2023/11/02/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/index.html">
+<meta property="og:title" content="cPlus">
+<meta property="og:url" content="https://kakia-kk.github.io/2023/11/15/cPlus/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="面向对象编程  面向对象编程（Object Oriented Programming，OOP）是一种编程范式，它以类或对象作为组织代码的基本单元，并将封装、抽象、继承与多态四个特性作为代码的设计和实现的基石。在面向对象编程中，我们会创建一系列抽象的定义，这些定义代表了系统中存在的各类对象。 面向对象编程与其他类型的编程有以下区别： &gt;封装：封装是将对象运行所需要的资源封装在程序对象">
+<meta property="og:description" content="类 简单理解 结构体的扩展 可以理解成拥有成员函数的结构体 class或者struct定义类 1234567891011121314class ClassName &amp;#123;  ...&amp;#125;;&#x2F;&#x2F; Example:class Object &amp;#123; public:  int weight;  int value;&amp;#125; e[array_length];const Obj">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-11-02T13:36:54.000Z">
-<meta property="article:modified_time" content="2023-11-02T13:37:26.856Z">
+<meta property="article:published_time" content="2023-11-15T06:08:32.000Z">
+<meta property="article:modified_time" content="2023-11-15T06:10:12.198Z">
 <meta property="article:author" content="Kakia">
 <meta name="twitter:card" content="summary">
     
@@ -40,7 +40,7 @@
     
     <title>
         
-            面向对象编程 -
+            cPlus -
         
         Kakia&#39;s Blog
     </title>
@@ -207,7 +207,7 @@
 
         <div class="article-title">
             
-                <h1 class="article-title-regular">面向对象编程</h1>
+                <h1 class="article-title-regular">cPlus</h1>
             
             </div>
             
@@ -229,15 +229,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-11-02 21:36:54</span>
-        <span class="mobile">2023-11-02 21:36:54</span>
+        <span class="desktop">2023-11-15 14:08:32</span>
+        <span class="mobile">2023-11-15 14:08:32</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-11-02 21:37:26</span>
-            <span class="mobile">2023-11-02 21:37:26</span>
+            <span class="desktop">2023-11-15 14:10:12</span>
+            <span class="mobile">2023-11-15 14:10:12</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -264,62 +264,43 @@
 
 
         <div class="article-content markdown-body">
-            <h1 id="面向对象编程">面向对象编程<br />
-</h1>
-<p>面向对象编程（Object Oriented
-Programming，OOP）是一种编程范式，它以类或对象作为组织代码的基本单元，并将<strong>封装、抽象、继承与多态</strong>四个特性作为代码的设计和实现的基石。在面向对象编程中，我们会创建一系列抽象的定义，这些定义代表了系统中存在的各类对象。<br />
-面向对象编程与其他类型的编程有以下区别：<br />
-&gt;封装：封装是将对象运行所需要的资源封装在程序对象中，并给外界公布接口的过程。这样，其他类使用时就很方便，不需要关心里边的功能是以哪种方式实现的，只要传入需要的参数就可以得到想要的结果。被封装的对象通常被称为抽象数据类型。封装的作用在于保护或者防止代码（数据）被我们无意中破坏。<br />
-&gt;抽象：抽象是从众多的事物中抽取出共同的、本质性的特征，而舍弃其非本质的特征的过程。具体地说，抽象就是人们在实践的基础上，对于丰富的感性素材通过去粗取精、去伪存真、由此及彼、由表及里的加工制作，形成概念、判断、推理等思维形式，以反映事物的本质和规律的方法。<br />
-&gt;继承：在面向对象编程中，继承是指子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为。<br />
-&gt;多态：简单来说，所谓多态意指相同的消息给予不同的对象会引发不同的动作。多态也可定义为“一种将不同的特殊行为和单个泛化记号相关联的能力”。多态可分为变量多态与函数多态。<br />
-</p>
-<p><strong>面向过程编程</strong>：这是一种以过程为中心的编程思想，分析出解决问题所需要的步骤，然后用函数把这些步骤一步一步实现，使用的时候一个一个依次调用就可以了。在面向过程编程中，数据和对数据的操作是分离的。<br />
-<strong>面向服务架构</strong>：将软件设计成一组可互操作的服务的一套原则或方法论。通常在考虑系统架构时才会触及SOA4。<br />
-<strong>基于组件开发</strong>：这是一种软件工程实践，设计时通常要求组件之间高内聚，松耦合。其接口可能是OO的，调用方式可能是以Service的方式。<br />
-总的来说，面向对象编程更适合应对大规模复杂程序的开发，能够让我们在应对复杂程序开发时的思路更加清晰。同时，面向对象编程提供了一种模块化的代码组织方式。此外，面向对象编程风格的代码易复用、易扩展和易维护。<br />
-</p>
-<h1 id="封装">封装<br />
-</h1>
-<p>对象代表什么,就得封装对应的数据,并提供数据对应的行为<br />
-不再是零散的数据了<br />
-</p>
-<h1 id="继承">继承<br />
-</h1>
-<p>extends关键字<br />
-类与类之间存在共性的内容,并满足子类是父类的一种,就可以考虑继承.<br />
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Student</span> <span class="keyword">extends</span> <span class="title class_">person</span>&#123;&#125;</span><br></pre></td></tr></table></figure></div> java只能单继承:一个类只能继承一个父类<br />
-java支持多层继承<br />
-所有的类都直接或间接继承于Object类<br />
-## 子类能够继承父类的内容:<br />
-* <del>构造方法</del>构造方法必须和类名相同<br />
-* 成员变量都可以继承,只不过私有的不能直接使用<br />
-* 成员方法只能继承虚方法(非private,非final,非static)<br />
-## this关键字<br />
-理解为一个变量,表示当前方法调用者的地址值<br />
-表示该对象<br />
-## super关键字<br />
-代表父类的存储空间(有点儿像c的指针)<br />
-表示父类<br />
-## 方法的重写<br />
-重写的注解<br />
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;eat some food&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div> 父类的方法不能满足子类的要求了<br />
-子类可以在父类的基础上<strong>重写成员方法</strong><br />
-子类不能继承父类的构造方法,但是可以用super调用<br />
-</p>
-<h1 id="多态">多态<br />
-</h1>
-<p>对象的多种形态<br />
-使用父类作为参数,可以接收所有的子类对象<br />
-多态中调用成员变量,会在父类里面找<br />
-调用成员方法,子类对方法进行了重写,相当于把父类方法覆盖了,所以是调用子类的方法<br />
-没办法调用子类特有的功能<br />
-父类可以强转换成子类,就可以调用子类的特有的功能<br />
-## 前提条件<br />
-* 有继承或实现关系<br />
-* 有父类引用指向子类对象<br />
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Fu</span> <span class="variable">fu</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Zi</span>();</span><br></pre></td></tr></table></figure></div> * 有方法重写<br />
-</p>
+            <h1 id="类">类</h1>
+<h2 id="简单理解">简单理解</h2>
+<p>结构体的扩展<br />
+可以理解成拥有成员函数的结构体</p>
+<h2 id="class或者struct定义类">class或者struct定义类</h2>
+<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ClassName</span> &#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Example:</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Object</span> &#123;</span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="type">int</span> weight;</span><br><span class="line">  <span class="type">int</span> value;</span><br><span class="line">&#125; e[array_length];</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> Object a;</span><br><span class="line">Object b, B[array_length];</span><br><span class="line">Object *c;</span><br></pre></td></tr></table></figure></div>
+<h2 id="访问修饰符">访问修饰符</h2>
+<ul>
+<li>public：该访问说明符之后的各个成员都可以被公开访问，简单来说就是无论
+类内 还是 类外 都可以访问。<br />
+</li>
+<li>protected：该访问说明符之后的各个成员可以被
+类内、派生类或者友元的成员访问，但类外 不能访问。<br />
+</li>
+<li>private：该访问说明符之后的各个成员 只能 被 类内
+成员或者友元的成员访问，不能 被从类外或者派生类中访问。</li>
+</ul>
+<h2 id="friend友元">friend友元</h2>
+<h2 id="derived-class派生元">derived class派生元</h2>
+<h2 id="访问修改成员变量">访问修改成员变量</h2>
+<ul>
+<li>变量.</li>
+<li>指针-&gt;</li>
+</ul>
+<h2 id="重载">重载</h2>
+<p>C++
+允许编写者为名称相同的函数或者运算符指定不同的定义。这称为<strong>重载（overload）</strong>。</p>
+<p>如果同名函数的参数种类、数量中的一者或多者两两不相同，则这些同名函数被看做是不同的。</p>
+<p>需要注意的是：如果两个同名函数的区别仅仅是返回值的类型不同则无法进行重载，此时编译器会拒绝编译！</p>
+<p>如果在调用时不会出现混淆（指调用某些同名函数时，无法根据所填参数种类和数量唯一地判断出被调用函数。常发生在具有默认参数的函数中），则编译器会根据调用时所填参数判断应调用函数。</p>
+<p>而上述过程被称作<strong>重载解析</strong>。<br />
+<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Vector</span> &#123;</span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="type">int</span> x, y;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">Vector</span>() : <span class="built_in">x</span>(<span class="number">0</span>), <span class="built_in">y</span>(<span class="number">0</span>) &#123;&#125;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">Vector</span>(<span class="type">int</span> _x, <span class="type">int</span> _y) : <span class="built_in">x</span>(_x), <span class="built_in">y</span>(_y) &#123;&#125;</span><br><span class="line"></span><br><span class="line">  <span class="type">int</span> <span class="keyword">operator</span>*(<span class="type">const</span> Vector&amp; other) &#123; <span class="keyword">return</span> x * other.x + y * other.y; &#125;</span><br><span class="line"></span><br><span class="line">  Vector <span class="keyword">operator</span>+(<span class="type">const</span> Vector&amp;);</span><br><span class="line">  Vector <span class="keyword">operator</span>-(<span class="type">const</span> Vector&amp;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Vector Vector::<span class="keyword">operator</span>+(<span class="type">const</span> Vector&amp; other) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Vector</span>(x + other.x, y + other.y);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Vector Vector::<span class="keyword">operator</span>-(<span class="type">const</span> Vector&amp; other) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Vector</span>(x - other.x, y - other.y);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 关于4,5行表示为x,y赋值，具体实现参见后文。</span></span><br></pre></td></tr></table></figure></div> <div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*类定义内重载*/</span> 返回类型 <span class="keyword">operator</span>符号(参数)&#123;...&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*类定义内声明，在外部定义*/</span> 返回类型 类名称::<span class="keyword">operator</span>符号(参数)&#123;...&#125;</span><br></pre></td></tr></table></figure></div> ## 实例化变量设定默认初始值 构造函数(Default
+constructor) <div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ClassName</span> &#123;</span><br><span class="line">  ... <span class="built_in">ClassName</span>(...)... &#123; ... &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Example:</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Object</span> &#123;</span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="type">int</span> weight;</span><br><span class="line">  <span class="type">int</span> value;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">Object</span>() &#123;</span><br><span class="line">    weight = <span class="number">0</span>;</span><br><span class="line">    value = <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></div>
+若无显式的构造函数，则编译器认为该类有隐式的默认构造函数。换言之，若无定义任何构造函数，则编译器会自动生成一个默认构造函数，并会根据成员元素的类型进行初始化（与定义
+内置类型 变量相同）。</p>
+<p>在这种情况下，成员元素都是未初始化的，访问未初始化的变量的结果是未定义的（也就是说并不知道会返回和值）。</p>
+<p>如果需要自定义初始化的值，可以再定义（或重载）构造函数。</p>
 
         </div>
 
@@ -327,18 +308,18 @@ java支持多层继承<br />
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> 面向对象编程</li>
+        <li><strong>Title:</strong> cPlus</li>
         <li><strong>Author:</strong> kakia</li>
         <li><strong>Created at
-                :</strong> 2023-11-02 21:36:54</li>
+                :</strong> 2023-11-15 14:08:32</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2023-11-02 21:37:26
+                    :</strong> 2023-11-15 14:10:12
             </li>
         
         <li>
-            <strong>Link:</strong> https://kakia-kk.github.io/2023/11/02/面向对象编程/
+            <strong>Link:</strong> https://kakia-kk.github.io/2023/11/15/cPlus/
         </li>
         <li>
             <strong>
@@ -362,29 +343,14 @@ java支持多层继承<br />
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2023/11/15/cPlus/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">cPlus</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                         rel="next"
-                        href="/2023/10/30/markdown/"
+                        href="/2023/11/02/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">markdown文法</span>
+                                <span class="post-nav-title-item">面向对象编程</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -449,12 +415,8 @@ java支持多层继承<br />
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">面向对象编程</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B"><span class="nav-text">面向对象编程
-</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%81%E8%A3%85"><span class="nav-text">封装
-</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF"><span class="nav-text">继承
-</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%9A%E6%80%81"><span class="nav-text">多态
-</span></a></li></ol>
+        <div class="page-title">cPlus</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B1%BB"><span class="nav-text">类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3"><span class="nav-text">简单理解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#class%E6%88%96%E8%80%85struct%E5%AE%9A%E4%B9%89%E7%B1%BB"><span class="nav-text">class或者struct定义类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="nav-text">访问修饰符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#friend%E5%8F%8B%E5%85%83"><span class="nav-text">friend友元</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#derived-class%E6%B4%BE%E7%94%9F%E5%85%83"><span class="nav-text">derived class派生元</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BF%E9%97%AE%E4%BF%AE%E6%94%B9%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F"><span class="nav-text">访问修改成员变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E8%BD%BD"><span class="nav-text">重载</span></a></li></ol></li></ol>
 
     </div>
 </div>
