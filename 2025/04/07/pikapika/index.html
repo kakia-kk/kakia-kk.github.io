@@ -159,44 +159,44 @@
   isToc: true,
   pageType: 'post'
 }</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">kakia's blog</span></a><a class="nav-page-title" href="/"><span class="site-name">pikapika</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">pikapika</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-07T12:50:28.000Z" title="发表于 2025-04-07 20:50:28">2025-04-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-07T12:52:15.261Z" title="更新于 2025-04-07 20:52:15">2025-04-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="pikapika"><a href="#pikapika" class="headerlink" title="pikapika"></a>pikapika</h1><h2 id="1-暴力破解"><a href="#1-暴力破解" class="headerlink" title="1 暴力破解"></a>1 暴力破解</h2><h3 id="1-2-基于表单的暴力破解"><a href="#1-2-基于表单的暴力破解" class="headerlink" title="1.2 基于表单的暴力破解"></a>1.2 基于表单的暴力破解</h3><p>BurpSuite开启拦截</p>
-<p><img src="/.com//pikapika%5Cimage-20250330110005392.png" alt="image-20250330110005392"></p>
+<p><img src="/pikapika%5Cimage-20250330110005392.png" alt="image-20250330110005392"></p>
 <p>表单填入一个数据发送</p>
-<p><img src="/.com//pikapika%5Cimage-20250330110031282.png" alt="image-20250330110031282"></p>
+<p><img src="/pikapika%5Cimage-20250330110031282.png" alt="image-20250330110031282"></p>
 <p>发送到Intruder选择攻击方式，标注爆破位置，导入表单进行爆破攻击：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330110142620.png" alt="image-20250330110142620"></p>
+<p><img src="/pikapika%5Cimage-20250330110142620.png" alt="image-20250330110142620"></p>
 <p>在返回数据中找到数据包长度不一样的那个就是正确密码</p>
-<p><img src="/.com//pikapika%5Cimage-20250330110219450.png" alt="image-20250330110219450"></p>
+<p><img src="/pikapika%5Cimage-20250330110219450.png" alt="image-20250330110219450"></p>
 <p>成功登录：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330110310964.png" alt="image-20250330110310964"></p>
+<p><img src="/pikapika%5Cimage-20250330110310964.png" alt="image-20250330110310964"></p>
 <h3 id="1-2-验证码绕过（服务器）"><a href="#1-2-验证码绕过（服务器）" class="headerlink" title="1.2 验证码绕过（服务器）"></a>1.2 验证码绕过（服务器）</h3><p>首先输入错误的验证码抓包：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330110549438.png" alt="image-20250330110549438"></p>
+<p><img src="/pikapika%5Cimage-20250330110549438.png" alt="image-20250330110549438"></p>
 <p>修改密码再输入一次，发现验证码没有变化：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330110916637.png" alt="image-20250330110916637"></p>
+<p><img src="/pikapika%5Cimage-20250330110916637.png" alt="image-20250330110916637"></p>
 <p>填入正确的验证码，像上一题一样爆破</p>
-<p><img src="/.com//pikapika%5Cimage-20250330111813700.png" alt="image-20250330111813700"></p>
+<p><img src="/pikapika%5Cimage-20250330111813700.png" alt="image-20250330111813700"></p>
 <p>找到返回数据包长度不一样的那一条，为正确密码：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330111859870.png" alt="image-20250330111859870"></p>
+<p><img src="/pikapika%5Cimage-20250330111859870.png" alt="image-20250330111859870"></p>
 <p>成功登录：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330112013759.png" alt="image-20250330112013759"></p>
+<p><img src="/pikapika%5Cimage-20250330112013759.png" alt="image-20250330112013759"></p>
 <h3 id="1-3-验证码绕过（客户端）"><a href="#1-3-验证码绕过（客户端）" class="headerlink" title="1.3 验证码绕过（客户端）"></a>1.3 验证码绕过（客户端）</h3><p>弹窗显示验证码错误，说明验证码检验是在前端：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330112306881.png" alt="image-20250330112306881"></p>
+<p><img src="/pikapika%5Cimage-20250330112306881.png" alt="image-20250330112306881"></p>
 <p>F12+F1选选择禁用JavaScript</p>
-<p><img src="/.com//pikapika%5Cimage-20250330112436688.png" alt="image-20250330112436688"></p>
+<p><img src="/pikapika%5Cimage-20250330112436688.png" alt="image-20250330112436688"></p>
 <p>接下来和上一题一样了：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330112642918.png" alt="image-20250330112642918"></p>
-<p><img src="/.com//pikapika%5Cimage-20250330112747081.png" alt="image-20250330112747081"></p>
+<p><img src="/pikapika%5Cimage-20250330112642918.png" alt="image-20250330112642918"></p>
+<p><img src="/pikapika%5Cimage-20250330112747081.png" alt="image-20250330112747081"></p>
 <h3 id="1-4-token防爆破"><a href="#1-4-token防爆破" class="headerlink" title="1.4 token防爆破"></a>1.4 token防爆破</h3><p>“token”通常指的是一个用于验证用户身份和授权访问的令牌。它是一种特殊的字符串或代码，由服务器生成并分配给经过身份验证的用户。用户在成功登录后，服务器会颁发一个token给客户端（例如Web浏览器），客户端将在随后的请求中将该token作为身份验证凭据发送给服务器。</p>
 <p>对于有token的的验证，我们适用于已经知道账号的情况，或者账号和密码一一对应的情况，并且我们的暴力破解方式就要有所调整，我们依旧是先抓包，并发送到攻击模块</p>
-<p><img src="/.com//pikapika%5Cimage-20250330113525766.png" alt="image-20250330113525766"></p>
+<p><img src="/pikapika%5Cimage-20250330113525766.png" alt="image-20250330113525766"></p>
 <p>我们找到Grep-Extact:</p>
-<p><img src="/.com//pikapika%5Cimage-20250330114303027.png" alt="image-20250330114303027"></p>
+<p><img src="/pikapika%5Cimage-20250330114303027.png" alt="image-20250330114303027"></p>
 <p>点击add然后刷新请求：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330114405886.png" alt="image-20250330114405886"></p>
+<p><img src="/pikapika%5Cimage-20250330114405886.png" alt="image-20250330114405886"></p>
 <p>找到token，复制：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330114525526.png" alt="image-20250330114525526"></p>
+<p><img src="/pikapika%5Cimage-20250330114525526.png" alt="image-20250330114525526"></p>
 <p>第二个位置选择Recusive grep,并把我们刚刚得到的值复制进去：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330114719197.png" alt="image-20250330114719197"></p>
-<p><img src="/.com//pikapika%5Cimage-20250330115115712.png" alt="image-20250330115115712"></p>
+<p><img src="/pikapika%5Cimage-20250330114719197.png" alt="image-20250330114719197"></p>
+<p><img src="/pikapika%5Cimage-20250330115115712.png" alt="image-20250330115115712"></p>
 <h2 id="2-XSS跨站点脚本攻击"><a href="#2-XSS跨站点脚本攻击" class="headerlink" title="2 XSS跨站点脚本攻击"></a>2 XSS跨站点脚本攻击</h2><p>XSS是一种发生在前端浏览器端的漏洞，所以其危害的对象也是前端用户。形成XSS漏洞的主要原因是程序对输入和输出没有做合适的处理，导致“精心构造”的字符输出在前端时被浏览器当作有效代码解析执行从而产生危害。因此在XSS漏洞的防范上，一般会采用“对输入进行过滤”和“输出进行转义”的方式进行处理:</p>
 <ul>
 <li>输入过滤：对输入进行过滤，不允许可能导致XSS攻击的字符输入;</li>
@@ -205,12 +205,12 @@
 <h3 id="2-1-反射型XXS（get）"><a href="#2-1-反射型XXS（get）" class="headerlink" title="2.1 反射型XXS（get）"></a>2.1 反射型XXS（get）</h3><script>alert('xss')</script>
 
 <p>首先要调整最大输入长度：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330115740414.png" alt="image-20250330115740414"></p>
+<p><img src="/pikapika%5Cimage-20250330115740414.png" alt="image-20250330115740414"></p>
 <p>脚本粘贴进输入栏提交：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330115845101.png" alt="image-20250330115845101"></p>
-<p><img src="/.com//pikapika%5Cimage-20250330115856724.png" alt="image-20250330115856724"></p>
+<p><img src="/pikapika%5Cimage-20250330115845101.png" alt="image-20250330115845101"></p>
+<p><img src="/pikapika%5Cimage-20250330115856724.png" alt="image-20250330115856724"></p>
 <h3 id="2-2-反射型XXS（Post）"><a href="#2-2-反射型XXS（Post）" class="headerlink" title="2.2 反射型XXS（Post）"></a>2.2 反射型XXS（Post）</h3><p>先登录，然后再输入框内填入刚刚的playload</p>
-<p><img src="/.com//pikapika%5Cimage-20250330120119952.png" alt="image-20250330120119952"></p>
+<p><img src="/pikapika%5Cimage-20250330120119952.png" alt="image-20250330120119952"></p>
 <p>我们先看一下post和get请求的区别</p>
 <p>数据传输方式：</p>
 <ul>
@@ -234,72 +234,72 @@
 </ul>
 <p>仔细观察就会发现，get型的那一关，我们输入的payload在url中有显示，而post则没有显示</p>
 <h3 id="2-3-存储型XXS"><a href="#2-3-存储型XXS" class="headerlink" title="2.3 存储型XXS"></a>2.3 存储型XXS</h3><p>一样的填入脚本，差别是我们的脚本被存储在服务器上，之后每一次进入都会有弹窗：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330120628555.png" alt="image-20250330120628555"></p>
+<p><img src="/pikapika%5Cimage-20250330120628555.png" alt="image-20250330120628555"></p>
 <h3 id="2-4-DOM型XSS"><a href="#2-4-DOM型XSS" class="headerlink" title="2.4 DOM型XSS"></a>2.4 DOM型XSS</h3><p>DOM是一种用于表示和操作HTML、XML等文档结构的编程接口，通过它可以使用代码来访问、修改和操作Web页面的内容和结构。</p>
 <p>首先检查一下输入：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330120808661.png" alt="image-20250330120808661"></p>
-<p><img src="/.com//pikapika%5Cimage-20250330120902297.png" alt="image-20250330120902297"></p>
+<p><img src="/pikapika%5Cimage-20250330120808661.png" alt="image-20250330120808661"></p>
+<p><img src="/pikapika%5Cimage-20250330120902297.png" alt="image-20250330120902297"></p>
 <p>playload：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x27; onclick=alert(&#x27;xss&#x27;)&gt;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/.com//pikapika%5Cimage-20250330121312514.png" alt="image-20250330121312514"></p>
+<p><img src="/pikapika%5Cimage-20250330121312514.png" alt="image-20250330121312514"></p>
 <h3 id="2-5-DOM型XXS-X"><a href="#2-5-DOM型XXS-X" class="headerlink" title="2.5 DOM型XXS-X"></a>2.5 DOM型XXS-X</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27; onclick=alert(&#x27;</span>xss<span class="string">&#x27;)&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/.com//pikapika%5Cimage-20250330121739527.png" alt="image-20250330121739527"></p>
-<p><img src="/.com//pikapika%5Cimage-20250330121822112.png" alt="image-20250330121822112"></p>
+<p><img src="/pikapika%5Cimage-20250330121739527.png" alt="image-20250330121739527"></p>
+<p><img src="/pikapika%5Cimage-20250330121822112.png" alt="image-20250330121822112"></p>
 <h3 id="2-6-XXS盲打"><a href="#2-6-XXS盲打" class="headerlink" title="2.6 XXS盲打"></a>2.6 XXS盲打</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;<span class="title function_">alert</span>(<span class="string">&#x27;xss&#x27;</span>)&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
 <p>根据提示我们登陆后台查看注入是否成功：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330122721529.png" alt="image-20250330122721529"></p>
+<p><img src="/pikapika%5Cimage-20250330122721529.png" alt="image-20250330122721529"></p>
 <h3 id="2-7-过滤"><a href="#2-7-过滤" class="headerlink" title="2.7 过滤"></a>2.7 过滤</h3><p>script会被过滤掉，我们尝试一些别的方法</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;alert(&#x27;xss&#x27;)&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/.com//pikapika%5Cimage-20250330123004799.png" alt="image-20250330123004799"></p>
+<p><img src="/pikapika%5Cimage-20250330123004799.png" alt="image-20250330123004799"></p>
 <h3 id="2-8"><a href="#2-8" class="headerlink" title="2.8"></a>2.8</h3><p>主要还是检查源代码，让代码闭合：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x27; onclick=&#x27;alert(&quot;xss&quot;)</span><br></pre></td></tr></table></figure>
 
-<p><img src="/.com//pikapika%5Cimage-20250330123504052.png" alt="image-20250330123504052"></p>
-<p><img src="/.com//pikapika%5Cimage-20250330123613878.png" alt="image-20250330123613878"></p>
+<p><img src="/pikapika%5Cimage-20250330123504052.png" alt="image-20250330123504052"></p>
+<p><img src="/pikapika%5Cimage-20250330123613878.png" alt="image-20250330123613878"></p>
 <h3 id="2-9"><a href="#2-9" class="headerlink" title="2.9"></a>2.9</h3><p>使用Javascript</p>
-<p><img src="/.com//pikapika%5Cimage-20250330123848855.png" alt="image-20250330123848855"></p>
+<p><img src="/pikapika%5Cimage-20250330123848855.png" alt="image-20250330123848855"></p>
 <h3 id="2-10"><a href="#2-10" class="headerlink" title="2.10"></a>2.10</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"><span class="title function_">alert</span>(<span class="string">&#x27;xss&#x27;</span>)</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="3-CSRF跨站请求伪造"><a href="#3-CSRF跨站请求伪造" class="headerlink" title="3 CSRF跨站请求伪造"></a>3 CSRF跨站请求伪造</h2><p>Cross-site request forgery 简称为“CSRF”，在CSRF的攻击场景中攻击者会伪造一个请求（这个请求一般是一个链接），然后欺骗目标用户进行点击，用户一旦点击了这个请求，整个攻击就完成了。所以CSRF攻击也成为”one click”攻击。</p>
 <h3 id="3-1-get"><a href="#3-1-get" class="headerlink" title="3.1 get"></a>3.1 get</h3><p>根据提示随便登录一个用户，选择修改个人信息：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330131604667.png" alt="image-20250330131604667"></p>
+<p><img src="/pikapika%5Cimage-20250330131604667.png" alt="image-20250330131604667"></p>
 <p>做一些修改</p>
-<p><img src="/.com//pikapika%5Cimage-20250330131710163.png" alt="image-20250330131710163"></p>
+<p><img src="/pikapika%5Cimage-20250330131710163.png" alt="image-20250330131710163"></p>
 <p>打开生成的链接，点击submit发现信息被修改了：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330131840119.png" alt="image-20250330131840119"></p>
-<p><img src="/.com//pikapika%5Cimage-20250330131937579.png" alt="image-20250330131937579"></p>
+<p><img src="/pikapika%5Cimage-20250330131840119.png" alt="image-20250330131840119"></p>
+<p><img src="/pikapika%5Cimage-20250330131937579.png" alt="image-20250330131937579"></p>
 <h3 id="3-2-post"><a href="#3-2-post" class="headerlink" title="3.2 post"></a>3.2 post</h3><p>操作方式同上，只是请求方式不一样了</p>
 <h3 id="3-3-token"><a href="#3-3-token" class="headerlink" title="3.3 token"></a>3.3 token</h3><p>这个地方加上了token没办法使用url的方式修改密码了：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330132815933.png" alt="image-20250330132815933"></p>
+<p><img src="/pikapika%5Cimage-20250330132815933.png" alt="image-20250330132815933"></p>
 <h2 id="4-SQL注入"><a href="#4-SQL注入" class="headerlink" title="4 SQL注入"></a>4 SQL注入</h2><h3 id="4-1-数字型注入"><a href="#4-1-数字型注入" class="headerlink" title="4.1 数字型注入"></a>4.1 数字型注入</h3><p>不需要闭合符</p>
 <p>输入，正常显示：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">order by 2</span><br></pre></td></tr></table></figure>
 
-<p><img src="/.com//pikapika%5Cimage-20250330134230058.png" alt="image-20250330134230058"></p>
+<p><img src="/pikapika%5Cimage-20250330134230058.png" alt="image-20250330134230058"></p>
 <p>3就显示错误了：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330134258722.png" alt="image-20250330134258722"></p>
+<p><img src="/pikapika%5Cimage-20250330134258722.png" alt="image-20250330134258722"></p>
 <p>其原理是，order by会对列继续排序，当我们输入的列数超过实际拥有的列数，就会提示该列不存在</p>
 <p>使用联合查询</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">union select 1,2</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id=-2 union select database(),version()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/.com//pikapika%5Cimage-20250330134602349.png" alt="image-20250330134602349"></p>
+<p><img src="/pikapika%5Cimage-20250330134602349.png" alt="image-20250330134602349"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id=-2 union select group_concat(table_name),2 from information_schema.tables where table_schema=&#x27;pikachu&#x27;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/.com//pikapika%5Cimage-20250330134811575.png" alt="image-20250330134811575"></p>
+<p><img src="/pikapika%5Cimage-20250330134811575.png" alt="image-20250330134811575"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">id=-2 union select group_concat(column_name),2 from information_schema.columns where table_schema=&#x27;pikachu&#x27; and table_name=&#x27;users&#x27;</span><br><span class="line"></span><br><span class="line">id=-2 union select group_concat(username),group_concat(password) from users</span><br></pre></td></tr></table></figure>
 
 <h3 id="4-2-字符型输入"><a href="#4-2-字符型输入" class="headerlink" title="4.2 字符型输入"></a>4.2 字符型输入</h3><p>这个需要先将前面的字符串闭合</p>
-<p><img src="/.com//pikapika%5Cimage-20250330135240709.png" alt="image-20250330135240709"></p>
+<p><img src="/pikapika%5Cimage-20250330135240709.png" alt="image-20250330135240709"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1&#x27; union select group_concat(table_name),2 from information_schema.tables where table_schema=database() --+&amp;submit=查询</span><br></pre></td></tr></table></figure>
 
 <p>把查询语句后面的部分注释掉</p>
-<p><img src="/.com//pikapika%5Cimage-20250330135555264.png" alt="image-20250330135555264"></p>
+<p><img src="/pikapika%5Cimage-20250330135555264.png" alt="image-20250330135555264"></p>
 <h3 id="4-3-搜索型注入"><a href="#4-3-搜索型注入" class="headerlink" title="4.3 搜索型注入"></a>4.3 搜索型注入</h3><p>sqlmap</p>
 <h2 id="5-RCE"><a href="#5-RCE" class="headerlink" title="5 RCE"></a>5 RCE</h2><p>RCE（远程命令执行）漏洞，可以让攻击者直接向后台服务器远程注入操作系统命令或者代码，从而控制后台系统。</p>
 <h3 id="5-1-ping"><a href="#5-1-ping" class="headerlink" title="5.1 ping"></a>5.1 ping</h3><p>Windows系统：</p>
@@ -317,7 +317,7 @@
 <li>&amp;（后台任务符）：两条语句都执行，如果前面的语句为假则执行后面的语句，如果前面的语句为真则不执行后面的语句。</li>
 <li>&amp;&amp;（逻辑与）：如果前面的语句为假则直接出错，也不再执行后面的语句；前面的语句为真则两条命令都执行，前面的语句只能为真。（命令替换）：当一个命令被解析时，它首先会执行反引号之间的操作。例 echo whoami</li>
 </ul>
-<p><img src="/.com//pikapika%5Cimage-20250330141815510.png" alt="image-20250330141815510"></p>
+<p><img src="/pikapika%5Cimage-20250330141815510.png" alt="image-20250330141815510"></p>
 <p>理论上可以执行所有操作</p>
 <h3 id="5-2-eval"><a href="#5-2-eval" class="headerlink" title="5.2 eval"></a>5.2 eval</h3><ul>
 <li><p>动态执行代码：eval() 函数使程序能够在运行时动态执行字符串中的代码。它可以将字符串中的代码作为有效的程序代码进行解析和执行。</p>
@@ -325,24 +325,24 @@
 <li><p>字符串转换为代码：eval() 函数将接收到的字符串参数解析为编程语言的有效代码，并尝试执行该代码。这意味着您可以在字符串中包含变量、表达式、函数调用等，并且它们将在执行时被解释和计算。</p>
 </li>
 </ul>
-<p><img src="/.com//pikapika%5Cimage-20250330142156511.png" alt="image-20250330142156511"></p>
-<p><img src="/.com//pikapika%5Cimage-20250330142240544.png" alt="image-20250330142240544"></p>
-<h2 id="6文件包含漏洞"><a href="#6文件包含漏洞" class="headerlink" title="6文件包含漏洞"></a>6文件包含漏洞</h2><h3 id="6-1-本地"><a href="#6-1-本地" class="headerlink" title="6.1 本地"></a>6.1 本地</h3><p><img src="/.com//pikapika%5Cimage-20250330142600927.png" alt="image-20250330142600927"></p>
+<p><img src="/pikapika%5Cimage-20250330142156511.png" alt="image-20250330142156511"></p>
+<p><img src="/pikapika%5Cimage-20250330142240544.png" alt="image-20250330142240544"></p>
+<h2 id="6文件包含漏洞"><a href="#6文件包含漏洞" class="headerlink" title="6文件包含漏洞"></a>6文件包含漏洞</h2><h3 id="6-1-本地"><a href="#6-1-本地" class="headerlink" title="6.1 本地"></a>6.1 本地</h3><p><img src="/pikapika%5Cimage-20250330142600927.png" alt="image-20250330142600927"></p>
 <h3 id="6-2-远程"><a href="#6-2-远程" class="headerlink" title="6.2 远程"></a>6.2 远程</h3><h2 id="7-不安全的文件下载"><a href="#7-不安全的文件下载" class="headerlink" title="7 不安全的文件下载"></a>7 不安全的文件下载</h2><p>在新的标签页中打开，我们更改下载的文件名：</p>
-<p><img src="/.com//pikapika%5Cimage-20250330144257312.png" alt="image-20250330144257312"></p>
+<p><img src="/pikapika%5Cimage-20250330144257312.png" alt="image-20250330144257312"></p>
 <h2 id="8-不安全的文件上传"><a href="#8-不安全的文件上传" class="headerlink" title="8 不安全的文件上传"></a>8 不安全的文件上传</h2><p>后续使用蚁剑连接</p>
 <h3 id="8-1-client-check"><a href="#8-1-client-check" class="headerlink" title="8.1 client check"></a>8.1 client check</h3><p>绕过前端的验证</p>
-<h3 id="8-2-MIME-type"><a href="#8-2-MIME-type" class="headerlink" title="8.2 MIME type"></a>8.2 MIME type</h3><h2 id="9-越权"><a href="#9-越权" class="headerlink" title="9 越权"></a>9 越权</h2><h3 id="9-1-水平越权"><a href="#9-1-水平越权" class="headerlink" title="9.1 水平越权"></a>9.1 水平越权</h3><p><img src="/.com//pikapika%5Cimage-20250331160601586.png" alt="image-20250331160601586"></p>
+<h3 id="8-2-MIME-type"><a href="#8-2-MIME-type" class="headerlink" title="8.2 MIME type"></a>8.2 MIME type</h3><h2 id="9-越权"><a href="#9-越权" class="headerlink" title="9 越权"></a>9 越权</h2><h3 id="9-1-水平越权"><a href="#9-1-水平越权" class="headerlink" title="9.1 水平越权"></a>9.1 水平越权</h3><p><img src="/pikapika%5Cimage-20250331160601586.png" alt="image-20250331160601586"></p>
 <p>修改username就可以查看别的</p>
-<p><img src="/.com//pikapika%5Cimage-20250331160621234.png" alt="image-20250331160621234"></p>
-<h3 id="9-2-垂直越权"><a href="#9-2-垂直越权" class="headerlink" title="9.2 垂直越权"></a>9.2 垂直越权</h3><h3 id><a href="#" class="headerlink" title></a><img src="/.com//pikapika%5Cimage-20250331160829301.png" alt="image-20250331160829301"></h3><p>首先查看admin用户比pikachu多出来的权限功能：</p>
+<p><img src="/pikapika%5Cimage-20250331160621234.png" alt="image-20250331160621234"></p>
+<h3 id="9-2-垂直越权"><a href="#9-2-垂直越权" class="headerlink" title="9.2 垂直越权"></a>9.2 垂直越权</h3><h3 id=""><a href="#" class="headerlink" title=""></a><img src="/pikapika%5Cimage-20250331160829301.png" alt="image-20250331160829301"></h3><p>首先查看admin用户比pikachu多出来的权限功能：</p>
 <p>有添加用户的权限，我们先把URL复制下来，再登录pikachu，粘贴在导航栏里面，就可以添加用户了</p>
-<p><img src="/.com//pikapika%5Cimage-20250331161308675.png" alt="image-20250331161308675"></p>
+<p><img src="/pikapika%5Cimage-20250331161308675.png" alt="image-20250331161308675"></p>
 <h2 id="10-目录遍历"><a href="#10-目录遍历" class="headerlink" title="10 目录遍历"></a>10 目录遍历</h2><p>后台没有对前端传进来的值进行严格的安全考虑，则攻击者可能会通过“..&#x2F;”这样的手段让后台打开或者执行一些其他的文件。</p>
 <p>访问一些不该访问的</p>
-<p><img src="/.com//pikapika%5Cimage-20250331162949462.png" alt="image-20250331162949462"></p>
+<p><img src="/pikapika%5Cimage-20250331162949462.png" alt="image-20250331162949462"></p>
 <h2 id="11-敏感信息泄露"><a href="#11-敏感信息泄露" class="headerlink" title="11 敏感信息泄露"></a>11 敏感信息泄露</h2><p>差不太多</p>
-<p><img src="/.com//pikapika%5Cimage-20250331165112317.png" alt="image-20250331165112317"></p>
+<p><img src="/pikapika%5Cimage-20250331165112317.png" alt="image-20250331165112317"></p>
 <h2 id="12-php反序列化"><a href="#12-php反序列化" class="headerlink" title="12 php反序列化"></a>12 php反序列化</h2><p>这个地方输入的内容被填充到PHP当中，这个地方的字符串会被反序列化，然后执行</p>
 <h2 id="13-XXE"><a href="#13-XXE" class="headerlink" title="13 XXE"></a>13 XXE</h2><p>XXE（XML External Entity）漏洞是一种在解析 XML 输入时的安全漏洞，攻击者可以利用该漏洞读取任意文件、执行远程请求、进行拒绝服务攻击等。以下为你详细介绍 XXE 漏洞（就可以访问一些不该访问的文件内容）</p>
 <h2 id="14-URL重定向"><a href="#14-URL重定向" class="headerlink" title="14 URL重定向"></a>14 URL重定向</h2><p>直接给用户一个跳转的接口url&#x3D;</p>
